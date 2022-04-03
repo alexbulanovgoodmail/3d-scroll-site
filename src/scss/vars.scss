@@ -10,7 +10,7 @@ $xxl: 1400px;
 $mainFont: 'Raleway', 'Helvetica', 'Arial', sans-serif;
 
 $mainFontColor: #ffffff;
-$mainFontSize: 16px;
+$mainFontSize: calc(var(--index) * 0.8);
 $mainFontWeight: 300;
 $mainLineHeight: 1.75;
 $mainBgColor: #000000;

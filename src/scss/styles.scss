@@ -4,6 +4,15 @@
 @import './utils/_libs.scss';
 */
 
+:root {
+  --index: calc(1vw + 1vh);
+  --gutter: 30px;
+  --side-small: 26;
+  --side-big: 36;
+  --depth: 5000px;
+  --transition: 0.75s cubic-bezier(0.075, 0.5, 0, 1);
+}
+
 @import './utils/_normalize.scss';
 @import './vars.scss';
 
@@ -37,6 +46,7 @@ html {
 }
 
 body {
+  min-height: var(--depth);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: $mainFont;
@@ -65,4 +75,21 @@ button {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  perspective: 1500px;
+}
+
+.text-right > * {
+  position: relative;
+  left: 18vw;
+}
+
+.text-left > * {
+  position: relative;
+  right: 18vw;
 }

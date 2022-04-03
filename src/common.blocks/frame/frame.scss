@@ -1,0 +1,69 @@
+@import '../../scss/vars';
+
+.frame {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  transition: var(--transition), opacity 0.75s ease;
+  will-change: transform;
+  transform-style: preserve-3d;
+
+  &_bg {
+    background-color: rgba($mainBgColor, 0.85);
+  }
+
+  &__title {
+    width: min-content;
+    font-size: calc(var(--index) * 3.3);
+    font-weight: 100;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    width: min-content;
+    font-size: calc(var(--index) * 3);
+    font-weight: 100;
+    line-height: 1;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  &__media {
+    position: relative;
+    width: calc(var(--index) * var(--side-small));
+    height: calc(var(--index) * var(--side-big));
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__media_left {
+    right: calc(var(--side-small) / 2 * var(--index) + var(--gutter));
+  }
+
+  &__media_right {
+    left: calc(var(--side-small) / 2 * var(--index) + var(--gutter));
+  }
+
+  &__media_video {
+    width: calc(var(--index) * var(--side-big));
+    height: calc(var(--index) * var(--side-small));
+  }
+
+  &__media_video.frame__media_right {
+    left: calc(var(--side-big) / 2 * var(--index) + var(--gutter));
+  }
+
+  &__media_video.frame__media_left {
+    right: calc(var(--side-big) / 2 * var(--index) + var(--gutter));
+  }
+
+  p {
+    margin-top: 5vh;
+    max-width: 30vw;
+  }
+}

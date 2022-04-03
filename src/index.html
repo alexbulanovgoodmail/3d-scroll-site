@@ -4,13 +4,124 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="«»">
+  <meta name="description" content="«3D сайта с анимацией прокрутки | HTML, CSS, JavaScript»">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <title></title>
+  <title>3D сайта с анимацией прокрутки | HTML, CSS, JavaScript</title>
 </head>
 
 <body>
+  <div class="container">
+    <section class="gallery">
+
+      <div class="frame">
+        <div class="frame__content">
+          <h2 class="frame__title">Beautiful World</h2>
+        </div>
+      </div>
+
+      <div class="frame">
+        <div class="frame__content">
+          <div class="frame__media frame__media_left"
+            style="background-image: url('${require(`./assets/images/1.jpg`)}')">
+          </div>
+        </div>
+      </div>
+
+      <div class="frame frame_bg">
+        <div class="frame__content">
+          <video class="frame__media frame__media_video frame__media_right" autoplay loop muted playsinline
+            src="./assets/media/video_optimized.mp4">
+          </video>
+        </div>
+      </div>
+
+      <div class="frame"></div>
+
+      <div class="frame">
+        <div class="frame__content text-right">
+          <h3 class="frame__subtitle">Pure planet</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur elit adipisicing. Nemo fugit, rerum dolorem assumenda consequatur
+            dicta error
+            iure laboriosam temporibus.</p>
+        </div>
+      </div>
+
+      <div class="frame frame_bg">
+        <div class="frame__content">
+          <div class="frame__media frame__media_left"
+            style="background-image: url('${require(`./assets/images/2.jpg`)}')">
+          </div>
+        </div>
+      </div>
+
+      <div class="frame"></div>
+
+      <div class="frame frame_bg">
+        <div class="frame__content">
+          <div class="frame__media frame__media_right"
+            style="background-image: url('${require(`./assets/images/3.jpg`)}')">
+          </div>
+        </div>
+      </div>
+
+      <div class="frame"></div>
+
+      <div class="frame">
+        <div class="frame__content text-left">
+          <h3 class="frame__subtitle">Ask the Mountains</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur elit adipisicing. Nemo fugit, rerum dolorem assumenda consequatur
+            dicta error
+            iure laboriosam temporibus.</p>
+        </div>
+      </div>
+
+      <div class="frame frame_bg">
+        <div class="frame__content">
+          <div class="frame__media frame__media_right"
+            style="background-image: url('${require(`./assets/images/4.jpg`)}')">
+          </div>
+        </div>
+      </div>
+
+      <div class="frame">
+        <div class="frame__content">
+          <video class="frame__media frame__media_video frame__media_right" autoplay loop muted playsinline
+            src="./assets/media/video_optimized.mp4">
+          </video>
+        </div>
+      </div>
+
+      <div class="frame"></div>
+      <div class="frame"></div>
+
+      <div class="frame frame_bg">
+        <div class="frame__content">
+          <div class="frame__media frame__media_left"
+            style="background-image: url('${require(`./assets/images/5.jpg`)}')">
+          </div>
+        </div>
+      </div>
+
+      <div class="frame frame_bg">
+        <div class="frame__content">
+          <video class="frame__media frame__media_video" autoplay loop muted playsinline
+            src="./assets/media/video_optimized.mp4">
+          </video>
+        </div>
+      </div>
+
+      <div class="frame"></div>
+      <div class="frame"></div>
+
+      <div class="frame">
+        <div class="frame__content">© WebDesign Master</div>
+      </div>
+    </section>
+  </div>
+
+  <img class="soundbutton paused" src="./assets/images/sound.gif" alt="Alt">
+  <audio class="audio" src="./assets/media/ambient.mp3" loop></audio>
 
 </body>
 
