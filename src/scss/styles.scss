@@ -1,0 +1,68 @@
+/*
+@import './utils/_reset.scss';
+@import './utils/_mixins.scss';
+@import './utils/_libs.scss';
+*/
+
+@import './utils/_normalize.scss';
+@import './vars.scss';
+
+// Rubik
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url('../assets/fonts/Raleway-Light.woff2') format('woff2'),
+    url('../assets/fonts/Raleway-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+  src: url('../assets/fonts/Raleway-Thin.woff2') format('woff2'),
+    url('../assets/fonts/Raleway-Thin.woff') format('woff');
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: $mainFont;
+  font-size: $mainFontSize;
+  font-weight: $mainFontWeight;
+  line-height: $mainLineHeight;
+  color: $mainFontColor;
+  background-color: $mainBgColor;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
